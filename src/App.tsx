@@ -1,11 +1,14 @@
-import { BrowserRouter } from "react-router-dom";
-import AppRoutes from "./routes";
+import { BrowserRouter } from "react-router-dom"
+import AppRoutes from "./routes"
+import Sidebar from "./shareContent/components/sidebar/Sidebar"
 
 const App = () => {
   return (
 
     <BrowserRouter>
-      <AppRoutes />
+      <Sidebar>
+        <AppRoutes />
+      </Sidebar>
     </BrowserRouter>
 
   )

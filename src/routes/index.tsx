@@ -1,5 +1,4 @@
-import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom"
 
 const AppRoutes = () => {
   return (
@@ -7,7 +6,7 @@ const AppRoutes = () => {
       <Route path="/pagina-inicial" element={<p>Página inicial</p>} />
       <Route path="*" element={<Navigate to="/pagina-inicial"/>}/>
     </Routes>
-  );
-};
+  )
+}
 
-export default AppRoutes;
+export default AppRoutes
